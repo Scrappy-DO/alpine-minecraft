@@ -2,7 +2,7 @@
 
 STARTDIR=$(pwd)
 
-apk add python3 py3-pip python3-dev alpine-sdk openjdk17-jre git curl doas libc++-dev linux-headers xz libssl-dev
+apk add python3 py3-pip python3-dev alpine-sdk openjdk17-jre git curl doas libc++-dev linux-headers xz openssl-dev
 
 adduser crafty
 
