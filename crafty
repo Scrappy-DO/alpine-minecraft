@@ -1,0 +1,10 @@
+#!/sbin/openrc-run
+
+name="crafty controler"
+command="venv-run"
+command_args="--venv ../.venv -- python main.py -d > ../crafty.log"
+directory="/home/crafty/crafty-4"
+command_user="crafty:crafty"
+command_background=true
+pidfile="/var/run/crafty.pid"
+procname="python"
