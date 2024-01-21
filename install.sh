@@ -4,12 +4,17 @@ STARTDIR=$(pwd)
 
 apk add python3 py3-pip python3-dev alpine-sdk openjdk17-jre git curl doas libc++-dev linux-headers xz openssl-dev
 
+git clone https://github.com/guludo/venv-run.git
+python3 setup.py install
+
 adduser crafty
 
 mkdir -p /home/crafty
 
 cd /home/crafty
 git clone https://gitlab.com/crafty-controller/crafty-4.git
+
+cp $STARTDIR/default.json /home/crafty/crafty-4/app/config/
 
 mkdir -p server
 cd server
