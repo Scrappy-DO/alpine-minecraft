@@ -1,5 +1,5 @@
-# alpine-minecraft
-## minecraft server for alpine
+# minecrft server install script
+## minecraft server for alpine (more OSes will come later)
 <br>
 
 ### what
