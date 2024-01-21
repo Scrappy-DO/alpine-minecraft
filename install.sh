@@ -15,7 +15,7 @@ mkdir -p /home/crafty
 cd /home/crafty
 git clone https://gitlab.com/crafty-controller/crafty-4.git
 
-cp $STARTDIR/default.json /home/crafty/crafty-4/app/config/
+
 
 mkdir -p server
 cd server
