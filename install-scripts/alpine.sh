@@ -15,15 +15,6 @@ mkdir -p /home/crafty
 cd /home/crafty
 git clone https://gitlab.com/crafty-controller/crafty-4.git
 
-
-
-mkdir -p server
-cd server
-curl -OJ https://meta.fabricmc.net/v2/versions/loader/1.20.2/0.15.6/1.0.0/server/jar
-
-tar xaf $STARTDIR/mods.tar.xz --directory /home/crafty/server
-
-cd /home/crafty
 python3 -m venv .venv
 
 source .venv/bin/activate
