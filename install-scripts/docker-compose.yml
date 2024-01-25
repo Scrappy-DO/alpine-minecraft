@@ -14,8 +14,8 @@ services:
         - "19132:19132/udp" # BEDROCK
         - "25500-25600:25500-25600" # MC SERV PORT RANGE
     volumes:
-        - ./docker/crafty/backups:/crafty/backups
-        - ./docker/crafty/logs:/crafty/logs
-        - ./docker/crafty/servers:/crafty/servers
-        - ./docker/crafty/config:/crafty/app/config
-        - ./docker/crafty/import:/crafty/import
+        - /docker/crafty/backups:/crafty/backups
+        - /docker/crafty/logs:/crafty/logs
+        - /docker/crafty/servers:/crafty/servers
+        - /docker/crafty/config:/crafty/app/config
+        - /docker/crafty/import:/crafty/import
