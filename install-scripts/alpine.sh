@@ -24,7 +24,7 @@ chown -R crafty:crafty /home/crafty
 
 cd $STARTDIR
 
-cp init-scripts/crafty /etc/init.d
+cp ../init-scripts/crafty-openrc /etc/init.d/crafty
 rc-update add crafty
 
 echo reboot
